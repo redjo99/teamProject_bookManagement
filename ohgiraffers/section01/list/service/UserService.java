@@ -18,6 +18,10 @@ private Map<String, UserDTO> userMap = new HashMap<>();// Map를 만들긴 했�
     }
 
     public UserDTO login(String id, String pw) {
+
+       /*  (UserDTO findUser = userMap.get(id);
+         if (findUser == null ) return null;*/  // Map구문 적다 실패해서 주석으로만 남김
+
         for (UserDTO user : userList) {
             if (user.getUserId().equals(id) &&
                     user.getPassword().equals(pw)) {
@@ -33,6 +37,7 @@ private Map<String, UserDTO> userMap = new HashMap<>();// Map를 만들긴 했�
         }
         return null;
     }
+
     public UserDTO findUserID(String ID){
         return userMap.get(ID); // 여기 Map user id 조회 추가
     }
