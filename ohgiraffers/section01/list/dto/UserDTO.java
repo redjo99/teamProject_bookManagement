@@ -19,8 +19,6 @@ public class UserDTO {
         this.password = password;
         this.name = name;
         this.rentedBooks = new ArrayList<>();
-
-
     }
 
     public String getUserId() { return userId; }
@@ -34,8 +32,8 @@ public class UserDTO {
     @Override
     public String toString() {
         return "UserDTO{" +
-                "userId='" + userId + "" +
-                ", name='" + name + "" +
+                "userId='" + userId + '\'' +
+                ", name='" + name + '\'' +
                 ", rentedBooks=" + rentedBooks +
                 '}';
     }
